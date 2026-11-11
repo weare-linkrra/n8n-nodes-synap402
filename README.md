@@ -1,4 +1,4 @@
-# n8n-nodes-synap402
+# @linkrra/n8n-nodes-synap402
 
 This is an n8n community node package for [Synap402](https://synap402.com), an OpenAI-compatible API for open models (Qwen, Gemma, gpt-oss and more), billed per token.
 
@@ -21,7 +21,7 @@ It contains two nodes:
 
 Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
-In short: open **Settings → Community Nodes → Install**, enter `n8n-nodes-synap402`, and confirm.
+In short: open **Settings → Community Nodes → Install**, enter `@linkrra/n8n-nodes-synap402`, and confirm.
 
 ## Credentials
 

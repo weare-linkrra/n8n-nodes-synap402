@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-synap402.synap402",
+	"node": "@linkrra/n8n-nodes-synap402.synap402",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Development", "Utility"],
