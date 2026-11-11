@@ -1,0 +1,66 @@
+{
+	"name": "n8n-nodes-synap402",
+	"version": "0.1.0",
+	"description": "n8n nodes for Synap402: OpenAI-compatible chat completions on open models (Qwen, Gemma, gpt-oss and more), pay per token. Includes a Chat Model sub-node for the AI Agent.",
+	"license": "MIT",
+	"homepage": "https://synap402.com",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"synap402",
+		"synap",
+		"llm",
+		"openai-compatible",
+		"chat-completions",
+		"ai-agent",
+		"open-models"
+	],
+	"author": {
+		"name": "Linkrra",
+		"email": "weare@linkrra.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/weare-linkrra/n8n-nodes-synap402.git"
+	},
+	"bugs": {
+		"url": "https://github.com/weare-linkrra/n8n-nodes-synap402/issues"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"aiNodeSdkVersion": 1,
+		"credentials": [
+			"dist/credentials/Synap402Api.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Synap402/Synap402.node.js",
+			"dist/nodes/LmChatSynap402/LmChatSynap402.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/ai-node-sdk": "0.37.2",
+		"@n8n/node-cli": "0.56.2",
+		"eslint": "9.39.4",
+		"n8n-workflow": "2.47.1",
+		"prettier": "3.8.3",
+		"release-it": "20.2.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"@n8n/ai-node-sdk": "*",
+		"n8n-workflow": "*"
+	}
+}

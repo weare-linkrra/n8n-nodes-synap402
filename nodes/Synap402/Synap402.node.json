@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-synap402.synap402",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Utility"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/weare-linkrra/n8n-nodes-synap402#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/weare-linkrra/n8n-nodes-synap402#synap402-node"
+			}
+		]
+	}
+}
