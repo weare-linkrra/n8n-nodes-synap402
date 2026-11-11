@@ -3,6 +3,9 @@
 	"version": "0.1.0",
 	"description": "n8n nodes for Synap402: OpenAI-compatible chat completions on open models (Qwen, Gemma, gpt-oss and more), pay per token. Includes a Chat Model sub-node for the AI Agent.",
 	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
 	"homepage": "https://synap402.com",
 	"keywords": [
 		"n8n-community-node-package",
@@ -36,7 +39,8 @@
 		"prepublishOnly": "n8n-node prerelease"
 	},
 	"files": [
-		"dist"
+		"dist",
+		"!dist/tsconfig.tsbuildinfo"
 	],
 	"n8n": {
 		"n8nNodesApiVersion": 1,
