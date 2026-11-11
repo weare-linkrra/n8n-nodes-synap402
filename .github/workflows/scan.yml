@@ -1,0 +1,18 @@
+name: Scan published package
+
+# Runs n8n's community package scanner (the same check the n8n verification
+# review uses) against the version published on npm.
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Scan with @n8n/scan-community-package
+        run: npx -y @n8n/scan-community-package @linkrra/n8n-nodes-synap402
